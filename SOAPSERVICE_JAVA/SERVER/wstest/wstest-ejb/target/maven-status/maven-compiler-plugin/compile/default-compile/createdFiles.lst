@@ -1,3 +1,4 @@
+ec\edu\espe\arquitectura\wstest\helper\ConexionMySQL.class
 ec\edu\espe\arquitectura\wstest\data\InitDataBean.class
 ec\edu\espe\arquitectura\wstest\model\Alumno.class
 ec\edu\espe\arquitectura\wstest\data\AlumnosBean.class

@@ -1,5 +1,6 @@
 package ec.edu.espe.arquitectura.wstest.data;
 
+import ec.edu.espe.arquitectura.wstest.helper.ConexionMySQL;
 import ec.edu.espe.arquitectura.wstest.model.Alumno;
 import ec.edu.espe.arquitectura.wstest.model.Telefono;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import java.sql.Connection;
 
 
 @Singleton
@@ -31,6 +33,10 @@ public class InitDataBean  {
             LOG.info("Alumno: " + a.toString());
         }
         LOG.info("Acabo de cargar los datos: Alumnos cargados " + this.db.size());
+        
+        LOG.info("Test dbConexion");
+       ConexionMySQL SQL = new ConexionMySQL();
+       Connection conn = SQL.conectarMySQL();
     }
     
     
